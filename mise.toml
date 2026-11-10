@@ -1,0 +1,17 @@
+[tools]
+python = "3.13.18"
+uv = "0.13.7"
+
+[settings]
+python.uv_venv_auto = true   # activate .venv (created by uv sync) on cd
+
+[env]
+UV_PYTHON_DOWNLOADS = "never"   # use mise's Python, not a uv-managed one
+
+[tasks.install]
+description = "Install the project dependencies into .venv"
+run = "uv sync"
+
+[tasks.lab]
+description = "Open the notebooks in Jupyter Lab"
+run = "uv run jupyter lab"

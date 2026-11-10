@@ -1,0 +1,18 @@
+[project]
+name = "supervised-learning"
+version = "0.1.0"
+description = "Supervised learning notebooks"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.3",
+    "pandas>=3.0",
+    "scipy>=1.15",
+    "scikit-learn>=1.9",
+    "matplotlib>=3.10",
+    "seaborn>=0.13",
+    "ipykernel",
+    "jupyterlab",
+]
+
+[tool.uv]
+package = false
